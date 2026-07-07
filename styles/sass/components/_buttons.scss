@@ -1,0 +1,12 @@
+.mobile-menu-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    @media screen and (width > 768px) {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+}

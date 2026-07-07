@@ -59,3 +59,18 @@ header .overlay-show {
   display: block;
   opacity: 0.6;
 }
+
+.mobile-menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+@media screen and (width > 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+.mobile-menu-button .hidden {
+  display: none;
+}
