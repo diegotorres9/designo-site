@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: clamp(2.188rem, 2.723vw + 1.549rem, 4rem);
+    padding-bottom: clamp(2.188rem, 2.723vw + 1.549rem, 4rem);
+    // border: 1px solid red;
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu {
+        background-color: #000;
+        position: absolute;
+        bottom: -230px;
+        left: 0;
+        width: 100%;
+        padding: 3rem 1.5rem;
+        transform: translateY(-150px);
+        display: none;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        ul {
+            padding: 0;
+            list-style-type: none;
+            display:flex;
+            flex-direction: column;
+            gap: 32px;
+            li {
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
