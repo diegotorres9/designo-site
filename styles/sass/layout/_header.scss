@@ -13,6 +13,23 @@ header {
     }
     .desktop-menu {
         display: none;
+        @media screen and (width > 768px) {
+            display: inline-block;
+            .menu {
+                display: flex;
+                flex-direction: row;
+                gap: 42px;
+                list-style-type: none;
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    li {
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+                }
+            }
+        }
     }
     .mobile-menu {
         background-color: #000;
@@ -33,10 +50,14 @@ header {
             display:flex;
             flex-direction: column;
             gap: 32px;
+            a {
+                text-decoration: none;
             li {
                 color: #fff;
                 text-transform: uppercase;
             }
+            }
+
         }
     }
     .overlay {

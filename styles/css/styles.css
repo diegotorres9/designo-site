@@ -15,6 +15,25 @@ header img {
 header .desktop-menu {
   display: none;
 }
+@media screen and (width > 768px) {
+  header .desktop-menu {
+    display: inline-block;
+  }
+  header .desktop-menu .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    list-style-type: none;
+    padding: 0;
+  }
+  header .desktop-menu .menu a {
+    text-decoration: none;
+  }
+  header .desktop-menu .menu a li {
+    text-transform: uppercase;
+    color: #000;
+  }
+}
 header .mobile-menu {
   background-color: #000;
   position: fixed;
@@ -36,7 +55,10 @@ header .mobile-menu ul {
   flex-direction: column;
   gap: 32px;
 }
-header .mobile-menu ul li {
+header .mobile-menu ul a {
+  text-decoration: none;
+}
+header .mobile-menu ul a li {
   color: #fff;
   text-transform: uppercase;
 }
