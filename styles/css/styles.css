@@ -70,6 +70,11 @@ header .mobile-menu ul a {
 header .mobile-menu ul a li {
   color: #fff;
   text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 25px;
 }
 header .menuIsOpen {
   transform: translateY(0px);
