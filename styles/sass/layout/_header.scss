@@ -60,23 +60,10 @@ header {
 
         }
     }
-    .overlay {
-        background-color: #000;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 100px;
-        opacity: 0;
-        display: inline-block;
-        transition: all 0.7s ease-in;
-        transition-behavior: allow-discrete;
-    }
+
     .menuIsOpen {
             transform: translateY(0px);
             opacity: 1;      
     }
-    .overlay-show {
-        display: block;
-        opacity: 0.6;
-    }
+
 }
