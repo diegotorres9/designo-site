@@ -1,7 +1,11 @@
 .content-wrapper {
+    width: 100%;
     padding-left: clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
     padding-right: clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
     position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     // .overlay {
     //     background-color: #000;
     //     width: 100vw;
