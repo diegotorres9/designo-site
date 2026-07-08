@@ -82,9 +82,13 @@ header .menuIsOpen {
 }
 
 .content-wrapper {
+  width: 100%;
   padding-left: clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
   padding-right: clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
   position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -444,7 +448,7 @@ footer .footer-content-wrapper .social-links svg:hover path {
   display: none;
 }
 
-.footer-cta_btn {
+.cta_btn, .footer-cta_btn {
   border: none;
   border-radius: 8px;
   background-color: #fff;
@@ -456,8 +460,87 @@ footer .footer-content-wrapper .social-links svg:hover path {
   color: #333136;
   transition: all 0.45s ease;
 }
-.footer-cta_btn:hover {
+.cta_btn:hover, .footer-cta_btn:hover {
   background-color: #FFAD9B;
   color: #fff;
   cursor: pointer;
+}
+
+.home_hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #E7816B;
+  padding: 80px 24px;
+  height: 95vh;
+  overflow-y: hidden;
+  background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+  background-position: -10% 50%;
+  background-size: cover;
+}
+@media screen and (width > 768px) {
+  .home_hero {
+    margin-right: unset;
+    margin-left: unset;
+    width: 100%;
+    border-radius: 15px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (width >= 1280px) {
+  .home_hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 145px 95px;
+    align-items: start;
+    overflow-x: hidden;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+.home_hero .hero-copy_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (width > 1280px) {
+  .home_hero .hero-copy_container {
+    text-align: start;
+  }
+}
+.home_hero .hero-copy_container h1 {
+  font-family: "Jost", sans-serif;
+  font-size: clamp(2rem, 1.502vw + 1.648rem, 3rem);
+  font-weight: 500;
+  color: #fff;
+  line-height: clamp(2.25rem, 1.127vw + 1.986rem, 3rem);
+}
+.home_hero .hero-copy_container p {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+}
+.home_hero img {
+  position: absolute;
+  transform: translateY(300px);
+  transform-origin: right center;
+}
+@media screen and (width > 768px) {
+  .home_hero img {
+    transform: translateY(250px);
+  }
+}
+@media screen and (width > 1280px) {
+  .home_hero img {
+    transform: translateY(30px);
+    transform: translateX(750px);
+  }
 }
