@@ -124,6 +124,10 @@ footer {
                         line-height: 14px;
                         letter-spacing: 2px;
                     }
+                    &:hover {
+                        text-decoration: underline #fff;
+                        text-decoration-thickness: 1px;
+                    }
                 }
             }
         }

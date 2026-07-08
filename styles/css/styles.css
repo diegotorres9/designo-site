@@ -4,8 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-top: clamp(2.188rem, 2.723vw + 1.549rem, 4rem);
-  padding-bottom: clamp(2.188rem, 2.723vw + 1.549rem, 4rem);
+  padding: clamp(2.188rem, 2.723vw + 1.549rem, 4rem) clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
 }
 header img {
   width: 200px;
@@ -31,7 +30,17 @@ header .desktop-menu {
   }
   header .desktop-menu .menu a li {
     text-transform: uppercase;
-    color: #000;
+    color: #333136;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 14px;
+  }
+  header .desktop-menu .menu a:hover {
+    -webkit-text-decoration: underline #333136;
+            text-decoration: underline #333136;
+    text-decoration-thickness: 1px;
   }
 }
 header .mobile-menu {
@@ -219,6 +228,11 @@ footer .footer-content-wrapper nav ul a li {
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 2px;
+}
+footer .footer-content-wrapper nav ul a:hover {
+  -webkit-text-decoration: underline #fff;
+          text-decoration: underline #fff;
+  text-decoration-thickness: 1px;
 }
 footer .footer-content-wrapper address {
   grid-column: 1/2;
