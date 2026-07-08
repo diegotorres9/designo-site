@@ -1,30 +1,47 @@
 .mobile-menu-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    @media screen and (width > 768px) {
-        display: none;
-    }
-    .hidden {
-        display: none;
-    }
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  @media screen and (width > 768px) {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
 }
-.cta_btn, .footer-cta_btn {
-    border: none;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 18px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #333136;
-    transition: all 0.45s ease;
-    &:hover {
-        background-color: #FFAD9B;
-        color: #fff;
-        cursor: pointer;
-    }
-
+.cta_btn,
+.footer-cta_btn {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333136;
+  transition: all 0.45s ease;
+  &:hover {
+    background-color: #ffad9b;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.location_btn {
+  border: none;
+  border-radius: 8px;
+  background-color: #e7816b;
+  padding: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.45s ease;
+  &:hover {
+    background-color: #ffad9b;
+    color: #fff;
+    cursor: pointer;
+  }
 }
