@@ -607,6 +607,101 @@ a .work-container.graphic-design {
   }
 }
 
+.inner-page_hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-color: #e7816b;
+  padding: 105px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 310px;
+}
+.inner-page_hero h1 {
+  font-family: "Jost", sans-serif;
+  font-size: clamp(2rem, 1.648rem + 1.502vw, 3rem);
+  font-weight: 500;
+  line-height: clamp(2.25rem, 1.986rem + 1.127vw, 3rem);
+  color: #fff;
+}
+.inner-page_hero p {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+}
+@media screen and (width > 768px) {
+  .inner-page_hero {
+    margin-right: unset;
+    margin-left: unset;
+    width: 100%;
+    border-radius: 15px;
+    overflow-x: hidden;
+    margin-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+  }
+  .inner-page_hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    transform: rotate(180deg);
+  }
+}
+@media screen and (width > 1280px) {
+  .inner-page_hero {
+    padding: 64px 190px;
+    background-image: none;
+  }
+  .inner-page_hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    transform: rotate(180deg);
+  }
+}
+
+.inner-works_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  margin-top: clamp(6rem, 4.592rem + 6.009vw, 10rem);
+  margin-bottom: clamp(6rem, 4.592rem + 6.009vw, 10rem);
+}
+@media screen and (width >= 1280px) {
+  .inner-works_container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+
 .home_hero {
   position: relative;
   width: 100vw;
