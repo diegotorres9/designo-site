@@ -1,0 +1,13 @@
+.inner-works_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  margin-top: clamp(6rem, 4.592rem + 6.009vw, 10rem);
+  margin-bottom: clamp(6rem, 4.592rem + 6.009vw, 10rem);
+  @media screen and (width >= 1280px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+  }
+}
