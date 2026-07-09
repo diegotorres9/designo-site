@@ -1108,3 +1108,135 @@ a .work-container.graphic-design {
 .real-deal-container .real-deal-copy p:nth-child(2) {
   margin-bottom: 32px;
 }
+
+.map-wrapper {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+@media screen and (width > 768px) {
+  .map-wrapper {
+    margin-right: unset;
+    margin-left: unset;
+    width: 100%;
+    border-radius: 15px;
+    overflow-x: hidden;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (width >= 1280px) {
+  .map-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (width >= 1280px) {
+  .map-wrapper.canada, .map-wrapper.uk {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+.map-wrapper:not(:last-child) {
+  margin-bottom: 40px;
+}
+.map-wrapper:last-child {
+  margin-bottom: 120px;
+}
+.map-wrapper.canada .map, .map-wrapper.uk .map {
+  grid-column: 2;
+}
+@media screen and (width > 1280px) {
+  .map-wrapper.canada .map picture img, .map-wrapper.uk .map picture img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+.map-wrapper.canada .map-copy, .map-wrapper.uk .map-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+@media screen and (width > 1280px) {
+  .map-wrapper.canada .map-copy, .map-wrapper.uk .map-copy {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+.map-wrapper .map picture img {
+  width: 100%;
+  max-height: 100%;
+}
+@media screen and (width > 1280px) {
+  .map-wrapper .map picture img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+.map-wrapper .map-copy {
+  background-color: #fdf3f0;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("/assets/locations/desktop/");
+}
+@media screen and (width >= 1280px) {
+  .map-wrapper .map-copy {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 95px;
+    row-gap: 24px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+.map-wrapper .map-copy h2 {
+  font-family: "Jost", sans-serif;
+  font-size: clamp(2rem, 1.824rem + 0.751vw, 2.5rem);
+  line-height: clamp(2.25rem, 1.986rem + 1.127vw, 3rem);
+  font-weight: 500;
+  color: #e7816b;
+}
+@media screen and (width >= 1280px) {
+  .map-wrapper .map-copy h2 {
+    align-self: end;
+    justify-self: start;
+  }
+}
+.map-wrapper .map-copy address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (width >= 1280px) {
+  .map-wrapper .map-copy address {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 120px;
+  }
+}
+.map-wrapper .map-copy address div {
+  display: flex;
+  flex-direction: column;
+}
+.map-wrapper .map-copy address div span {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-style: normal;
+}
+.map-wrapper .map-copy address div span:first-child {
+  font-weight: 700;
+}
