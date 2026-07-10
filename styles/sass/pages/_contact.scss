@@ -26,6 +26,9 @@
       font-weight: 400;
       line-height: 26px;
     }
+    @media screen and (width >= 768px) {
+      text-align: start;
+    }
   }
   .contact-form-container {
     width: 100%;
@@ -33,11 +36,14 @@
       display: flex;
       flex-direction: column;
       justify-content: start;
+      align-items: center;
       gap: 25px;
       .container {
         display: flex;
         flex-direction: column;
         position: relative;
+        justify-self: start;
+        width: 100%;
         &:not(:last-child) {
           margin-bottom: 25px;
         }
@@ -109,6 +115,9 @@
           gap: 10px;
         }
       }
+      .form-submit {
+        align-self: end;
+      }
     }
   }
   @media screen and (width >= 768px) {
@@ -117,5 +126,11 @@
     width: 100%;
     border-radius: 15px;
     overflow-x: hidden;
+  }
+  @media screen and (width >= 1280px) {
+    display: flex;
+    flex-direction: row;
+    padding: 55px 96px;
+    gap: 95px;
   }
 }
