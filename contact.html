@@ -14,7 +14,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <script src="./javascript/menu.js" defer></script>
+  <script src="/javascript/menu.js" defer></script>
+  <script src="/javascript/form.js" defer></script>
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 
@@ -67,19 +68,51 @@
   </header>
   <main class="content-wrapper">
     <div class="overlay"></div>
-    Contact us
-    Ready to take it to the next level? Let’s talk about your project or idea
-    and
-    find out how
-    we can help your business grow. If you are looking for unique digital
-    experiences that’s
-    relatable to your users, drop us a line.
+    <section class="contact-form-wrapper">
+      <div class="contact-form-copy">
+        <h1>Contact us</h1>
+        <p>Ready to take it to the next level? Let’s talk about your project or
+          idea and find out how we can help your business grow. If you are
+          looking for unique digital experiences that’s relatable to your users,
+          drop us a line.
+        </p>
+      </div>
+      <div class="contact-form-container">
+        <form action="" method="get" class="form" novalidate>
+          <div class="form-name container">
+            <input type="text" name="name" id="name" placeholder="Name"
+              required>
+            <label for="name">Name</label>
+            <div class="error-message"></div>
+          </div>
+          <div class="form-email container">
 
-    Name
-    Email address
-    Phone
-    Your message
-    Submit
+            <input type="email" name="email" id="email"
+              data-error="Your email must contain the @ symbol"
+              placeholder="Email Address" required>
+            <label for="email">Email Address</label>
+            <div class="error-message"></div>
+          </div>
+          <div class="form-phone container">
+
+            <input type="tel" name="phone-number" id="phone-number"
+              placeholder="Phone" required>
+            <label for="phone-number">Phone</label>
+            <div class="error-message"></div>
+          </div>
+          <div class="form-textarea container">
+
+            <textarea name="text-area" id="text-area" placeholder="Your Message"
+              required></textarea>
+            <label for="text-area">Your Message</label>
+            <div class="error-message"></div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="submit-form">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <section class="locations-wrapper">
       <div class="location">
