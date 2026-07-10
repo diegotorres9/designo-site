@@ -486,6 +486,19 @@ footer .footer-content-wrapper .social-links svg:hover path {
   cursor: pointer;
 }
 
+.submit-form_btn {
+  padding: 18px 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
 }
@@ -1440,6 +1453,11 @@ a .work-container.graphic-design {
   font-weight: 400;
   line-height: 26px;
 }
+@media screen and (width >= 768px) {
+  .contact-form-wrapper .contact-form-copy {
+    text-align: start;
+  }
+}
 .contact-form-wrapper .contact-form-container {
   width: 100%;
 }
@@ -1447,12 +1465,15 @@ a .work-container.graphic-design {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
   gap: 25px;
 }
 .contact-form-wrapper .contact-form-container form .container {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-self: start;
+  width: 100%;
 }
 .contact-form-wrapper .contact-form-container form .container:not(:last-child) {
   margin-bottom: 25px;
@@ -1530,6 +1551,9 @@ a .work-container.graphic-design {
   align-items: center;
   gap: 10px;
 }
+.contact-form-wrapper .contact-form-container form .form-submit {
+  align-self: end;
+}
 @media screen and (width >= 768px) {
   .contact-form-wrapper {
     margin-right: unset;
@@ -1537,5 +1561,13 @@ a .work-container.graphic-design {
     width: 100%;
     border-radius: 15px;
     overflow-x: hidden;
+  }
+}
+@media screen and (width >= 1280px) {
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 55px 96px;
+    gap: 95px;
   }
 }
