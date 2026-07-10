@@ -10,6 +10,10 @@
   align-items: center;
   gap: 48px;
   justify-content: center;
+  background-image: url("/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left -100px top 0px;
+  background-size: 1000px;
   .contact-form-copy {
     text-align: center;
     color: #fff;
@@ -114,6 +118,9 @@
           align-items: center;
           gap: 10px;
         }
+        textarea {
+          resize: none;
+        }
       }
       .form-submit {
         align-self: end;
@@ -126,6 +133,10 @@
     width: 100%;
     border-radius: 15px;
     overflow-x: hidden;
+    background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top -150px left -50px;
+    background-size: contain;
   }
   @media screen and (width >= 1280px) {
     display: flex;
