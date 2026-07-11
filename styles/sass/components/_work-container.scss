@@ -67,40 +67,40 @@ a {
       }
     }
     &.web-design {
-      background-image: url("./assets/home/mobile/image-web-design.jpg");
+      background-image: url("../assets/home/mobile/image-web-design.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       @media screen and (width >=768px) {
-        background-image: url("./assets/home/tablet/image-web-design.jpg");
+        background-image: url("../assets/home/tablet/image-web-design.jpg");
       }
       @media screen and (width >= 1280px) {
         padding: 273px 136px;
-        background-image: url("./assets/home/desktop/image-web-design-large.jpg");
+        background-image: url("../assets/home/desktop/image-web-design-large.jpg");
       }
     }
     &.app-design {
-      background-image: url("./assets/home/mobile/image-app-design.jpg");
+      background-image: url("../assets/home/mobile/image-app-design.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       @media screen and (width >=768px) {
-        background-image: url("./assets/home/tablet/image-app-design.jpg");
+        background-image: url("../assets/home/tablet/image-app-design.jpg");
         height: 100%;
       }
       @media screen and (width >= 1280px) {
-        background-image: url("./assets/home/desktop/image-app-design.jpg");
+        background-image: url("../assets/home/desktop/image-app-design.jpg");
         height: 100%;
       }
     }
     &.graphic-design {
-      background-image: url("./assets/home/mobile/image-graphic-design.jpg");
+      background-image: url("../assets/home/mobile/image-graphic-design.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       @media screen and (width >=768px) {
-        background-image: url("./assets/home/tablet/image-graphic-design.jpg");
+        background-image: url("../assets/home/tablet/image-graphic-design.jpg");
         height: 100%;
       }
       @media screen and (width >= 1280px) {
-        background-image: url("./assets/home/desktop/image-graphic-design.jpg");
+        background-image: url("../assets/home/desktop/image-graphic-design.jpg");
         height: 100%;
       }
     }
