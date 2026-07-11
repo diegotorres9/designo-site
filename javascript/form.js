@@ -1,12 +1,11 @@
 const form = document.querySelector("form");
 
-
 function validateField(field) {
     const errorEl = field.parentElement.querySelector(".error-message");
     if(!field.validity.valid) {
         errorEl.textContent = field.dataset.error || "can't be empty";
         const errorImage = document.createElement("img");
-        errorImage.src = "/assets/contact/desktop/icon-error.svg";
+        errorImage.src = "./assets/contact/desktop/icon-error.svg";
         errorEl.append(errorImage);
         return false
     }
