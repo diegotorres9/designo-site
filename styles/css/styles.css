@@ -1525,6 +1525,17 @@ a .work-container.graphic-design {
   padding-top: 10px;
   padding-left: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
 }
+.contact-form-wrapper .contact-form-container form .container input[type=text]::-moz-placeholder, .contact-form-wrapper .contact-form-container form .container input[type=email]::-moz-placeholder, .contact-form-wrapper .contact-form-container form .container input[type=tel]::-moz-placeholder, .contact-form-wrapper .contact-form-container form .container textarea::-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.contact-form-wrapper .contact-form-container form .container input[type=text]::placeholder,
+.contact-form-wrapper .contact-form-container form .container input[type=email]::placeholder,
+.contact-form-wrapper .contact-form-container form .container input[type=tel]::placeholder,
+.contact-form-wrapper .contact-form-container form .container textarea::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
 .contact-form-wrapper .contact-form-container form .container input[type=text]:focus,
 .contact-form-wrapper .contact-form-container form .container input[type=email]:focus,
 .contact-form-wrapper .contact-form-container form .container input[type=tel]:focus,

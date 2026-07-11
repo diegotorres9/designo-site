@@ -88,6 +88,10 @@
           color: #fff;
           padding-top: 10px;
           padding-left: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+          &::placeholder {
+            color: #fff;
+            opacity: 0.5;
+          }
           &:focus {
             border-bottom: 2px solid #fff;
             + label {
