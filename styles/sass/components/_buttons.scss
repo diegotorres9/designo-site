@@ -56,4 +56,10 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: all 0.45s ease;
+  &:hover {
+    background-color: #ffad9b;
+    color: #fff;
+    cursor: pointer;
+  }
 }
