@@ -17,8 +17,10 @@
   img {
     align-self: center;
     justify-self: center;
+    width: 200px;
+    height: 27px;
     @media screen and (width > 768px) {
-      align-self: start;
+      align-self: center;
       justify-self: auto;
     }
   }
