@@ -10,5 +10,5 @@ menuIcon.addEventListener('click', () => {
     overlay.classList.toggle('overlay-show');
     hamburgerIcon.classList.toggle('hidden');
     closeIcon.classList.toggle('hidden');
-    // console.log('event worked, class toggle did not')
+    document.body.classList.toggle('no-scroll');
 })
