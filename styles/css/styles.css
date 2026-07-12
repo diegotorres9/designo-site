@@ -87,8 +87,59 @@ header .menuIsOpen {
   padding-right: clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
+}
+.content-wrapper .bg-pattern-container-large {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: -1;
+  display: none;
+}
+@media screen and (width >= 1280px) {
+  .content-wrapper .bg-pattern-container-large {
+    display: block;
+  }
+}
+.content-wrapper .bg-pattern-container-large-contact {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  z-index: -1;
+  display: none;
+  overflow: hidden;
+}
+@media screen and (width >= 1280px) {
+  .content-wrapper .bg-pattern-container-large-contact {
+    display: block;
+  }
+}
+.content-wrapper .bg-pattern-container-left {
+  position: absolute;
+  left: 0;
+  top: 250px;
+  z-index: -1;
+  display: none;
+}
+@media screen and (width >= 1280px) {
+  .content-wrapper .bg-pattern-container-left {
+    display: block;
+  }
+}
+.content-wrapper .bg-pattern-container-right {
+  position: absolute;
+  right: 10px;
+  bottom: -150px;
+  z-index: -1;
+  display: none;
+  transform: rotate(180deg);
+}
+@media screen and (width >= 1280px) {
+  .content-wrapper .bg-pattern-container-right {
+    display: block;
+  }
 }
 
 footer {
@@ -192,10 +243,12 @@ footer .footer-content-wrapper img {
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  width: 200px;
+  height: 27px;
 }
 @media screen and (width > 768px) {
   footer .footer-content-wrapper img {
-    align-self: start;
+    align-self: center;
     justify-self: auto;
   }
 }
@@ -326,10 +379,12 @@ footer .footer-content-wrapper .social-links svg:hover path {
 .contact-footer-content-wrapper img {
   align-self: center;
   justify-self: center;
+  width: 200px;
+  height: 27px;
 }
 @media screen and (width > 768px) {
   .contact-footer-content-wrapper img {
-    align-self: start;
+    align-self: center;
     justify-self: auto;
   }
 }
@@ -882,6 +937,34 @@ a .work-container.graphic-design {
   letter-spacing: 5px;
 }
 
+.overlay {
+  position: absolute; /* Locks it to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+  transition: all 0.7s ease-in;
+  transition-behavior: allow-discrete;
+  z-index: 2;
+}
+@media screen and (width >= 768px) {
+  .overlay {
+    display: none;
+  }
+}
+
+.overlay-show {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 .home_hero {
   position: relative;
   width: 100vw;
@@ -1368,6 +1451,7 @@ a .work-container.graphic-design {
   max-height: -moz-max-content;
   max-height: max-content;
   width: 100%;
+  z-index: 0 !important;
 }
 .map-wrapper .map picture img {
   width: 100%;
@@ -1387,6 +1471,16 @@ a .work-container.graphic-design {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (width >= 768px) {
+  .map-wrapper .map-copy {
+    background-image: url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 @media screen and (width >= 1280px) {
   .map-wrapper .map-copy {

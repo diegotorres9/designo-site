@@ -1,82 +1,81 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: clamp(2.188rem, 2.723vw + 1.549rem, 4rem) clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
-    img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: clamp(2.188rem, 2.723vw + 1.549rem, 4rem)
+    clamp(1.5rem, 13.239vw - 1.603rem, 10.313rem);
+  img {
     width: 200px;
     max-width: 100%;
     z-index: 9998;
-    }
-    .desktop-menu {
-        display: none;
-        @media screen and (width > 768px) {
-            display: inline-block;
-            .menu {
-                display: flex;
-                flex-direction: row;
-                gap: 42px;
-                list-style-type: none;
-                padding: 0;
-                a {
-                    text-decoration: none;
-                    li {
-                        text-transform: uppercase;
-                        color: #333136;
-                        font-family: 'Jost', sans-serif;
-                        font-size: 14px;
-                        font-weight: 400;
-                        letter-spacing: 2px;
-                        line-height: 14px;
-                    }
-                    &:hover {
-                        text-decoration: underline #333136;
-                        text-decoration-thickness: 1px;
-                    }
-                }
-            }
+  }
+  .desktop-menu {
+    display: none;
+    @media screen and (width > 768px) {
+      display: inline-block;
+      .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 42px;
+        list-style-type: none;
+        padding: 0;
+        a {
+          text-decoration: none;
+          li {
+            text-transform: uppercase;
+            color: #333136;
+            font-family: "Jost", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            line-height: 14px;
+          }
+          &:hover {
+            text-decoration: underline #333136;
+            text-decoration-thickness: 1px;
+          }
         }
+      }
     }
-    .mobile-menu {
-        background-color: #000;
-        position: fixed;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        padding: 3rem 1.5rem;
-        transform: translateY(-430px);
-        display: inline-block;
-        opacity: 0;
-        transition: all 0.7s ease-in;
-        transition-behavior: allow-discrete;
-        z-index: 9999;
-        ul {
-            padding: 0;
-            list-style-type: none;
-            display:flex;
-            flex-direction: column;
-            gap: 32px;
-            a {
-                text-decoration: none;
-            li {
-                color: #fff;
-                text-transform: uppercase;
-                font-family: 'Jost', sans-serif;
-                font-size: 24px;
-                font-weight: 400;
-                letter-spacing: 2px;
-                line-height: 25px;
-            }
-            }
-
+  }
+  .mobile-menu {
+    background-color: #000;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 3rem 1.5rem;
+    transform: translateY(-430px);
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.7s ease-in;
+    transition-behavior: allow-discrete;
+    z-index: 9999;
+    ul {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      a {
+        text-decoration: none;
+        li {
+          color: #fff;
+          text-transform: uppercase;
+          font-family: "Jost", sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: 2px;
+          line-height: 25px;
         }
+      }
     }
+  }
 
-    .menuIsOpen {
-            transform: translateY(0px);
-            opacity: 1;      
-    }
-
+  .menuIsOpen {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
