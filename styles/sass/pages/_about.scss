@@ -107,15 +107,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
     background-color: #fdf3f0;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
     @media screen and (width > 768px) {
       padding: 68px 58px;
+      background-position: 50% 125%;
     }
     @media screen and (width > 1280px) {
       align-items: start;
       justify-content: center;
       text-align: start;
-      padding: 154px 94px;
+      // padding: 154px 94px;
+      background-position: left 100px bottom 10px;
     }
     h2 {
       font-family: "Jost", sans-serif;
@@ -173,14 +178,18 @@
     align-items: center;
     text-align: center;
     background-color: #fdf3f0;
+    background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
     @media screen and (width > 768px) {
       padding: 68px 58px 94px 58px;
+      background-position: 50% 125%;
     }
     @media screen and (width > 1280px) {
       align-items: start;
       justify-content: center;
       text-align: start;
-      padding: 154px 94px;
+      // padding: 154px 94px;
+      background-position: left 100px bottom 10px;
     }
     h2 {
       font-family: "Jost", sans-serif;
