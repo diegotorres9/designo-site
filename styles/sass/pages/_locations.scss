@@ -58,7 +58,7 @@
     height: 320px;
     max-height: max-content;
     width: 100%;
-
+    z-index: 0 !important;
     picture {
       img {
         width: 100%;
@@ -78,7 +78,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    // background-image: url("/assets/locations/desktop");
+    background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media screen and (width >= 768px) {
+      background-image: url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
     @media screen and (width >= 1280px) {
       display: grid;
       grid-template-columns: 1fr;
