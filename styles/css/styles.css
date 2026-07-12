@@ -1193,7 +1193,7 @@ a .work-container.graphic-design {
   text-align: center;
   width: 100%;
   background-color: #fdf3f0;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
   background-repeat: no-repeat;
 }
 @media screen and (width > 768px) {
@@ -1268,7 +1268,7 @@ a .work-container.graphic-design {
   align-items: center;
   text-align: center;
   background-color: #fdf3f0;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
   background-repeat: no-repeat;
 }
 @media screen and (width > 768px) {
