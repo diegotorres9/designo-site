@@ -231,6 +231,7 @@ footer .footer-content-wrapper {
   padding-top: clamp(4rem, 0.751vw + 3.824rem, 4.5rem);
   padding-bottom: clamp(4rem, 0.751vw + 3.824rem, 4.5rem);
   row-gap: 40px;
+  position: relative;
 }
 @media screen and (width > 768px) {
   footer .footer-content-wrapper {
@@ -245,11 +246,27 @@ footer .footer-content-wrapper img {
   justify-self: center;
   width: 200px;
   height: 27px;
+  margin-bottom: 65px;
 }
 @media screen and (width > 768px) {
   footer .footer-content-wrapper img {
     align-self: center;
     justify-self: auto;
+    margin-bottom: 0;
+  }
+}
+footer .footer-content-wrapper hr {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #fff;
+  opacity: 0.3;
+}
+@media screen and (width >= 768px) {
+  footer .footer-content-wrapper hr {
+    top: 50%;
   }
 }
 footer .footer-content-wrapper nav {
@@ -366,6 +383,7 @@ footer .footer-content-wrapper .social-links svg:hover path {
   background-color: #000;
   padding-top: clamp(4rem, 0.751vw + 3.824rem, 4.5rem);
   padding-bottom: clamp(4rem, 0.751vw + 3.824rem, 4.5rem);
+  position: relative;
 }
 @media screen and (width > 768px) {
   .contact-footer-content-wrapper {
@@ -374,6 +392,7 @@ footer .footer-content-wrapper .social-links svg:hover path {
     row-gap: 0;
     padding-right: clamp(2.5rem, 11.643vw - 0.229rem, 10.25rem);
     padding-left: clamp(2.5rem, 11.643vw - 0.229rem, 10.25rem);
+    gap: 72px;
   }
 }
 .contact-footer-content-wrapper img {
@@ -381,11 +400,27 @@ footer .footer-content-wrapper .social-links svg:hover path {
   justify-self: center;
   width: 200px;
   height: 27px;
+  margin-bottom: 62px;
 }
 @media screen and (width > 768px) {
   .contact-footer-content-wrapper img {
     align-self: center;
     justify-self: auto;
+    margin-bottom: 0;
+  }
+}
+.contact-footer-content-wrapper hr {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #fff;
+  opacity: 0.3;
+}
+@media screen and (width >= 768px) {
+  .contact-footer-content-wrapper hr {
+    top: 35%;
   }
 }
 .contact-footer-content-wrapper nav {
